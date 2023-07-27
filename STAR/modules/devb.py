@@ -21,10 +21,10 @@ from STAR.config import OWNER_USERNAME
     & ~filters.edited
 )
 async def yas(client, message):
-    usr = await client.get_chat("OWNER_USERNAME")
+    usr = await client.get_chat({OWNER_USERNAME})
     name = usr.first_name
     photo = await client.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"هلا عمري", 
+    await message.reply_photo(photo,       caption=f"⋆ 𝑺𝒐𝒖𝒓𝒄𝒆 𝑺𝒕𝒂𝒓 ⋆ **\n\n‍ ⤹ DeV . :{name}\n ⤹ UsEr . :@{usr.username}\n ⤹ Id . :{usr.id}\n ⤹ Bio . :{usr.bio}\n\n ⤹ DeV ChanneL. @{UPDATE} **", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
