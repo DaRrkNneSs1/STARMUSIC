@@ -45,27 +45,6 @@ async def start_(client: Client, message: Message):
 
 
 
-@Client.on_message(
-    command(["المطور","مطور"])
-    & filters.group
-    & ~filters.edited
-)
-async def huhh(client, message):
-    usr = await client.get_chat("OWNER_USERNAME")
-    name = usr.first_name
-    photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"""** ⤹ DeV . :{name}\n ⤹ UsEr . :@{usr.username}\n ⤹ Id . :{usr.id}\n ⤹ Bio . :{usr.bio}\n\n ⤹ DeV ChanneL. @{UPDATE} **""", 
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"https://t.me/{usr.username}")
-                ],
-            ]
-        ),
-)
-
-
 
 @Client.on_message(
     command(["سورس","السورس","star","مطوريين","المطوريين","مطورين","المطورين","مطورين السورس","صاحب السورس","مطور السورس"])
