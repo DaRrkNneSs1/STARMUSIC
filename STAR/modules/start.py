@@ -54,7 +54,7 @@ async def huhh(client, message):
     usr = await client.get_chat("OWNER_USERNAME")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"""⋆ 𝑺𝒐𝒖𝒓𝒄𝒆 𝑺𝒕𝒂𝒓 ⋆ **\n\n‍ ⤹ DeV . :{name}\n ⤹ UsEr . :@{usr.username}\n ⤹ Id . :{usr.id}\n ⤹ Bio . :{usr.bio}\n\n ⤹ DeV ChanneL. @{UPDATE} **""", 
+    await message.reply_photo(photo,       caption=f"""** ⤹ DeV . :{name}\n ⤹ UsEr . :@{usr.username}\n ⤹ Id . :{usr.id}\n ⤹ Bio . :{usr.bio}\n\n ⤹ DeV ChanneL. @{UPDATE} **""", 
     reply_markup=InlineKeyboardMarkup(
             [
                 [
