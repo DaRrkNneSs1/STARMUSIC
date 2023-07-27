@@ -127,7 +127,7 @@ async def who_is(client, message):
     username = from_user.username or ""
     
     message_out_str = (
-        "<b>From Telegram Database</b>\n\n"
+        "<b>⋆ 𝑺𝒐𝒖𝒓𝒄𝒆 𝑺𝒕𝒂𝒓 ⋆</b>\n\n"
         f"<b>• Name : <a href='tg://user?id={from_user.id}'>{first_name}</a></b>\n"
         f"<b>• ID :</b> <code>{from_user.id}</code>\n"
         f"<b>• User :</b> @{username}\n"
