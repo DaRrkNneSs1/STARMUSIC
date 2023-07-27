@@ -1,0 +1,6 @@
+ # By:- Simo& Rowes
+
+ # bot commands
+ 
+TAG_COMMAND : ["@all"]
+TAG_COMMAND_STOP : ["all stop"]

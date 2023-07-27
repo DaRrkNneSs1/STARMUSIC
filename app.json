@@ -1,0 +1,114 @@
+{
+    "name": "@S0URCE_STAR تنصيب بوتات ميوزك قناتنا",
+    "description": "@DaRrKNneSs_1 , @R7_OX المطورين",
+    "logo": "https://graph.org/file/05897feb515bc6f479625.jpg",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/@DaRrKNneSs1/STARMUSIC",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "بايروجرام يحبيبي عشان رويس مش بيحب التريمكس",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "الايدي بتاع المطور يفنان",
+            "required": true,
+            "value": ""
+        },
+        "ASSID": {
+            "description": "حط ايدي حساب المساعد هنا",
+            "required": true,
+            "value": ""
+        },
+        "HEROKU_APP_NAME": {
+            "description": "اول اسم كتبته فوق حطه هنا هنا ها",
+            "required": true,
+            "value": ""
+        },
+        "ASSNAME": {
+            "description": "اسم حساب المساعد يخويا",
+            "required": true,
+            "value": ""
+        },
+        "ASSUSERNAME": {
+            "description": " @ يوزر الحساب المساعد منغير",
+            "required": true,
+            "value": ""
+        },
+        "BOT_ID": {
+            "description": "ايدي البوت ي فنان",
+            "required": true,
+            "value": ""
+        },
+        "BOT_USERNAME": {
+            "description": " @ يوزر البوت منغير",
+            "required": true,
+            "value": ""
+        },
+        "SUPPORT": {
+            "description": "يوزر جروبك ي فنان",
+            "required": true,
+            "value": ""
+        },
+        "UPDATE": {
+            "description": "يوزر قناتك ي فنان",
+            "required": true,
+            "value": ""
+        },
+        "OWNER_USERNAME": {
+            "description": "يوزر المطور يخويا",
+            "required": true,
+            "value": ""
+        },
+        "BOT_NAME": {
+            "description": "اسم بوتك يحبيبي او سيبها",
+            "required": true,
+            "value": "⋆ 𝑺𝒐𝒖𝒓𝒄𝒆 𝑺𝒕𝒂𝒓 ⋆"
+        },
+        "START_PIC": {
+            "description": "سيبها زي مهي ي فنان",
+            "value": "https://graph.org/file/05897feb515bc6f479625.jpg",
+            "required": true
+            
+        },
+        "API_ID": {
+            "description": "الايدي هاته من نفس اللينك اللي فوق يخويا ",
+            "required": true,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "https://my.telegram.org/ الهاش ي فنان هاته من هنا ",
+            "required": true,
+            "value": ""
+        },
+        "SUDO_USERS": {
+            "description": "اكتب ايدي المطورين اللي عاوزهم ولو مش عاوز حط ايدي بتاعك",
+            "required": true,
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "اكتب توكن البوت ",
+            "required": true,
+            "value": ""
+        },
+        "HEROKU_API_KEY": {
+            "description": "مفتاح هيروكو هقولك ازاي تجيبه فالشرح",
+            "required": true,
+            "value": ""
+        },
+        "MONGO_DB_URI": {
+            "description": "سيبها زي مهي ، او لو عاوز تعمل مونجو لنفسك شوف الشرح",
+            "required": true,
+            "value": "mongodb+srv://eslam223:eslam123zx@cluster0.zqcin7m.mongodb.net/?retryWrites=true&w=majority"
+            
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/DaRrKNneSs1/STARMUSIC"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
