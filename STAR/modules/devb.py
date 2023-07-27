@@ -10,6 +10,11 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, 
 from STAR.filters import command
 from random import  choice, randint
 
+from STAR.config import BOT_USERNAME
+from STAR.config import BOT_NAME
+from STAR.config import UPDATE
+from STAR.config import OWNER_USERNAME
+
 @Client.on_message(
     command(["المطور","مطور"])
     & filters.group
