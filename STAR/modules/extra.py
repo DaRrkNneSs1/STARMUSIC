@@ -165,7 +165,7 @@ async def who_is(client, message):
         f"<b>• Name : <a href='tg://user?id={from_user.id}'>{first_name}</a></b>\n"
         f"<b>• ID :</b> <code>{from_user.id}</code>\n"
         f"<b>• User :</b> @{username}\n"
-        f"<b>• Bio :</b> {usr.bio}
+        f"<b>• Bio :</b> {usr.bio}\n"
         f"<b>Is Deleted:</b> True\n" if from_user.is_deleted else ""
         f"<b>Is Verified:</b> True" if from_user.is_verified else ""
         f"<b>Is Scam:</b> True" if from_user.is_scam else ""
